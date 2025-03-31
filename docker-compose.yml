@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  ical-proxy:
+    build: .
+    container_name: ical-proxy
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    # If you want to use a custom port, you can use:
+    # command: python ical_proxy.py 8080
+    # ports:
+    #   - "8080:8080"
