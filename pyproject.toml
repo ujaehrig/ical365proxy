@@ -9,7 +9,3 @@ dependencies = [
    "requests<3",
    "python-dotenv<2"
 ]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
