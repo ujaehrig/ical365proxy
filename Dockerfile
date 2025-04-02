@@ -10,6 +10,7 @@ COPY pyproject.toml main.py  timezone.csv ./
 
 # Sync the project into a new environment, using the frozen lockfile
 WORKDIR /app
+RUN uv venv
 RUN uv pip install .
 
 # Expose the port
